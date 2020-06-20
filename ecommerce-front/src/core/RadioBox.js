@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Naira from 'react-naira';
 
 const RadioBox = ({ prices, handleFilters }) => {
     const [value, setValue] = useState(0);
@@ -9,6 +10,7 @@ const RadioBox = ({ prices, handleFilters }) => {
     };
 
     return prices.map((p, i) => (
+
         <div key={i}>
             <input
                 onChange={handleChange}
@@ -17,7 +19,15 @@ const RadioBox = ({ prices, handleFilters }) => {
                 type="radio"
                 className="mr-2 ml-4"
             />
-            <label className="form-check-label">{p.name}</label>
+            <label className="form-check-label">
+            
+            {p._id == 0 ? <p>Any</p> : <p><Naira>{parseInt(p.lower)}</Naira> to <Naira>{parseInt(p.upper)}</Naira></p> }
+
+            
+            
+
+            </label>
+
         </div>
     ));
 };
