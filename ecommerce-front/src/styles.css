@@ -61,6 +61,12 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .product-img {
+        min-height: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     .jumbotron h2 {
         margin-top: 10px;
     }
