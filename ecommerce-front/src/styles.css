@@ -61,12 +61,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .product-img {
-        min-height: 10px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
     .jumbotron h2 {
         margin-top: 10px;
     }
@@ -119,18 +113,5 @@
     }
     100% {
         background-position: 0% 50%;
-    }
-}
-
-@media (min-width: 600px) {
-    p {
-        font-size: 1.25rem;
-    }
-}
-
-@media (min-width: 800px) {
-    p {
-        font-size: 1.5rem;
-        line-height: 1.5;
     }
 }
